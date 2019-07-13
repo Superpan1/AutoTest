@@ -8,12 +8,24 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter1" />
         <module name="Chapter2" />
+        <module name="Chapter3a" />
+        <module name="Chapter5" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AutoTest" target="1.5" />
       <module name="Chapter1" target="1.5" />
-      <module name="Chapter2" target="1.5" />
+      <module name="Chapter2" target="6" />
+      <module name="Chapter3a" target="1.6" />
+      <module name="Chapter5" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Chapter1" options="-parameters" />
+      <module name="Chapter2" options="-parameters" />
+      <module name="Chapter3a" options="" />
+      <module name="Chapter5" options="" />
+    </option>
   </component>
 </project>
